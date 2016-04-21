@@ -1,0 +1,68 @@
+﻿body {
+    background-image: url('../../images/background.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    background-color: white;
+    margin: auto;
+}
+.navbar-brand {
+    font-family: 'Roboto', serif;
+}
+.row .glyphicon {
+    font-size: 24px;
+    display: block;
+    padding-bottom: 15px;
+}
+.jumbotron {
+    margin: 50px 50px 50px 50px;
+}
+#navbar {
+    border-radius: 0px;
+}
+#header-title {
+    font-family: 'Roboto', serif;
+}
+#menuBar {
+    padding: 5px 5px 5px 5px;
+    float: right;
+}
+#serviceList {
+    margin-top: 50px;
+}
+#serviceList div {
+    border-radius: 70px;
+    background-color: #1b3889;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 10px 10px 30px #888888;
+}
+#serviceList div h2 {
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+.points {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    color: white;
+}
+.points .well {
+    margin-left: 50px;
+    background-color: #5b5252;
+}
+.points .well:last-child {
+    margin-right: 50px;
+}
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#footer p {
+    margin: 15px 20px 10px 10px;
+}
+#contact ul {
+    list-style: none;
+}
