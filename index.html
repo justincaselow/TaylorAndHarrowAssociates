@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="Content/app/main.css" />
     <link rel="stylesheet" href="Content/app/animations.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="Scripts/angular.js"></script>
-    <script type="text/javascript" src="Scripts/angular-animate.js"></script>
-    <script type="text/javascript" src="Scripts/angular-route.js"></script>
+    <script type="text/javascript" src="Scripts/jquery/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="Scripts/angular/angular.js"></script>
+    <script type="text/javascript" src="Scripts/require/require.js"></script>
+    <script type="text/javascript" src="Scripts/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="Scripts/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="Scripts/app/main.js"></script>
     <title>Taylor & Harrow Associates</title>
 </head>
@@ -28,7 +29,8 @@
         <div ng-view></div>
     </div>
     <div id="footer" class="footer navbar-default navbar-fixed-bottom">
-        <p class="text-right">Copyright <i class="glyphicon glyphicon-copyright-mark"></i> 2016</p>
+        <p id="rates" class="text-left">EUR: {{eurRate}}, USD: {{usdRate}}</p>
+        <p id="copyright">Copyright <i class="glyphicon glyphicon-copyright-mark"></i> 2016</p>
     </div>
 </body>
 </html>
