@@ -1,8 +1,4 @@
-require(['fxRatesService.js']);
-
-var taylorHarrowApp = angular.module('taylorHarrowApp', ['ngRoute', 'ngAnimate']);
-
-taylorHarrowApp.controller('mainController', function ($scope, fxRateService) {
+angular.module('taylorHarrowApp').controller('mainController', function ($scope, fxRateService) {
     fxRateService.getRates('EUR').then(function(data) {
         $scope.eurRate = data;
     });
@@ -11,7 +7,7 @@ taylorHarrowApp.controller('mainController', function ($scope, fxRateService) {
     });
 });
 
-taylorHarrowApp.config(function ($routeProvider) {
+angular.module('taylorHarrowApp').config(function ($routeProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'pages/home.html',

@@ -1,4 +1,4 @@
-taylorHarrowApp.service('fxRateService', function($http, $q) {
+angular.module('taylorHarrowApp').service('fxRateService', function($http, $q) {
 
     this.getRates = function(ccy) {
         if (!ccy)
